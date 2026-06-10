@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "RON V20: Rotator-Oriented Neuron"
+message: "If you use RON in research, please cite this repository."
+type: software
+authors:
+  - name: "One Seika"
+repository-code: "https://github.com/OWNER/REPOSITORY"
+version: "20.0"
+date-released: "2026-06-10"

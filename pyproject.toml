@@ -1,0 +1,13 @@
+[project]
+name = "ron"
+version = "20.0.0"
+description = "RON V20: Rotator-Oriented Neuron architecture with active geodesic cortex."
+requires-python = ">=3.10"
+dependencies = ["torch"]
+
+[tool.setuptools.packages.find]
+include = ["ron*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

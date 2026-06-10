@@ -1,0 +1,526 @@
+{
+  "protocol": {
+    "version": "v20.3",
+    "purpose": "scientific reproducibility protocol for RON variants",
+    "config": {
+      "steps": 2,
+      "batch_size": 5,
+      "seeds": 1,
+      "base_seed": 1000,
+      "lr": 0.028,
+      "out_dir": "runs/v20_3_publication_protocol",
+      "device": "cpu"
+    },
+    "elapsed_seconds": 14.210423469543457,
+    "all_steps_csv": "runs/v20_3_publication_protocol/all_steps_metrics.csv",
+    "final_csv": "runs/v20_3_publication_protocol/final_metrics_by_seed.csv",
+    "metric_summary": {
+      "total_loss": {
+        "hybrid": {
+          "mean": 3.7743635177612305,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            3.7743635177612305,
+            3.7743635177612305
+          ]
+        },
+        "pure": {
+          "mean": 3.729771375656128,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            3.729771375656128,
+            3.729771375656128
+          ]
+        },
+        "triaxial": {
+          "mean": 3.7405827045440674,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            3.7405827045440674,
+            3.7405827045440674
+          ]
+        }
+      },
+      "action_acc": {
+        "hybrid": {
+          "mean": 0.4000000059604645,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.4000000059604645,
+            0.4000000059604645
+          ]
+        },
+        "pure": {
+          "mean": 0.4000000059604645,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.4000000059604645,
+            0.4000000059604645
+          ]
+        },
+        "triaxial": {
+          "mean": 0.4000000059604645,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.4000000059604645,
+            0.4000000059604645
+          ]
+        }
+      },
+      "cause_acc": {
+        "hybrid": {
+          "mean": 0.0,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "pure": {
+          "mean": 0.0,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "triaxial": {
+          "mean": 0.0,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "consequence_acc": {
+        "hybrid": {
+          "mean": 0.4000000059604645,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.4000000059604645,
+            0.4000000059604645
+          ]
+        },
+        "pure": {
+          "mean": 0.4000000059604645,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.4000000059604645,
+            0.4000000059604645
+          ]
+        },
+        "triaxial": {
+          "mean": 0.4000000059604645,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.4000000059604645,
+            0.4000000059604645
+          ]
+        }
+      },
+      "residual": {
+        "hybrid": {
+          "mean": 0.02459782361984253,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.02459782361984253,
+            0.02459782361984253
+          ]
+        },
+        "pure": {
+          "mean": 0.034706056118011475,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.034706056118011475,
+            0.034706056118011475
+          ]
+        },
+        "triaxial": {
+          "mean": 0.034706056118011475,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.034706056118011475,
+            0.034706056118011475
+          ]
+        }
+      },
+      "release": {
+        "hybrid": {
+          "mean": 0.5862735509872437,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.5862735509872437,
+            0.5862735509872437
+          ]
+        },
+        "pure": {
+          "mean": 0.651779294013977,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.651779294013977,
+            0.651779294013977
+          ]
+        },
+        "triaxial": {
+          "mean": 0.651779294013977,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.651779294013977,
+            0.651779294013977
+          ]
+        }
+      },
+      "geodesic_loss": {
+        "hybrid": {
+          "mean": 0.2511729300022125,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.2511729300022125,
+            0.2511729300022125
+          ]
+        },
+        "pure": {
+          "mean": 0.0,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "triaxial": {
+          "mean": 0.2862442433834076,
+          "std": 0.0,
+          "n": 1,
+          "ci95": [
+            0.2862442433834076,
+            0.2862442433834076
+          ]
+        }
+      }
+    },
+    "comparisons": {
+      "triaxial_minus_pure_total_loss": {
+        "mean_diff": 0.010811328887939453,
+        "std_diff": 0.0,
+        "ci95": [
+          0.010811328887939453,
+          0.010811328887939453
+        ],
+        "cohen_d": 0.0,
+        "better_count": 0,
+        "n": 1,
+        "prefer_lower": true
+      },
+      "hybrid_minus_pure_total_loss": {
+        "mean_diff": 0.04459214210510254,
+        "std_diff": 0.0,
+        "ci95": [
+          0.04459214210510254,
+          0.04459214210510254
+        ],
+        "cohen_d": 0.0,
+        "better_count": 0,
+        "n": 1,
+        "prefer_lower": true
+      },
+      "triaxial_minus_pure_action_acc": {
+        "mean_diff": 0.0,
+        "std_diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "cohen_d": 0.0,
+        "better_count": 0,
+        "n": 1,
+        "prefer_lower": false
+      },
+      "hybrid_minus_pure_action_acc": {
+        "mean_diff": 0.0,
+        "std_diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "cohen_d": 0.0,
+        "better_count": 0,
+        "n": 1,
+        "prefer_lower": false
+      },
+      "triaxial_minus_pure_cause_acc": {
+        "mean_diff": 0.0,
+        "std_diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "cohen_d": 0.0,
+        "better_count": 0,
+        "n": 1,
+        "prefer_lower": false
+      },
+      "hybrid_minus_pure_cause_acc": {
+        "mean_diff": 0.0,
+        "std_diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "cohen_d": 0.0,
+        "better_count": 0,
+        "n": 1,
+        "prefer_lower": false
+      },
+      "triaxial_minus_pure_consequence_acc": {
+        "mean_diff": 0.0,
+        "std_diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "cohen_d": 0.0,
+        "better_count": 0,
+        "n": 1,
+        "prefer_lower": false
+      },
+      "hybrid_minus_pure_consequence_acc": {
+        "mean_diff": 0.0,
+        "std_diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "cohen_d": 0.0,
+        "better_count": 0,
+        "n": 1,
+        "prefer_lower": false
+      }
+    },
+    "final_rows": [
+      {
+        "step": 2,
+        "variant": "pure",
+        "route_loss": 3.6876513957977295,
+        "residual": 0.034706056118011475,
+        "phi_pressure": 0.01374093908816576,
+        "dissonance": 0.4407618045806885,
+        "port_entropy": 0.5370623469352722,
+        "release": 0.651779294013977,
+        "geodesic_loss": 0.0,
+        "transport_loss": 0.0,
+        "total_loss": 3.729771375656128,
+        "action_acc": 0.4000000059604645,
+        "cause_acc": 0.0,
+        "consequence_acc": 0.4000000059604645,
+        "seed": 1000
+      },
+      {
+        "step": 2,
+        "variant": "triaxial",
+        "route_loss": 3.6876513957977295,
+        "residual": 0.034706056118011475,
+        "phi_pressure": 0.01374093908816576,
+        "dissonance": 0.4407618045806885,
+        "port_entropy": 0.5370623469352722,
+        "release": 0.651779294013977,
+        "geodesic_loss": 0.2862442433834076,
+        "transport_loss": 0.03963804990053177,
+        "total_loss": 3.7405827045440674,
+        "action_acc": 0.4000000059604645,
+        "cause_acc": 0.0,
+        "consequence_acc": 0.4000000059604645,
+        "seed": 1000
+      },
+      {
+        "step": 2,
+        "variant": "hybrid",
+        "route_loss": 3.7204315662384033,
+        "residual": 0.02459782361984253,
+        "phi_pressure": 0.01373949646949768,
+        "dissonance": 0.4700128436088562,
+        "port_entropy": 0.5512420535087585,
+        "release": 0.5862735509872437,
+        "geodesic_loss": 0.2511729300022125,
+        "transport_loss": 0.004509837832301855,
+        "total_loss": 3.7743635177612305,
+        "action_acc": 0.4000000059604645,
+        "cause_acc": 0.0,
+        "consequence_acc": 0.4000000059604645,
+        "seed": 1000
+      }
+    ],
+    "evidence_grade": {
+      "level": "prototype_reproducible_protocol",
+      "meaning": "CPU-safe replicated evidence; not a universal proof and not a peer-reviewed large-scale benchmark.",
+      "six_hour_guidance": "Use more seeds and steps within the 6h budget; prefer seeds>=10 and steps>=100 if hardware allows."
+    }
+  },
+  "packet": {
+    "config": {
+      "samples": 12,
+      "seed": 909,
+      "out_dir": "runs/v20_3_publication_packet",
+      "network": "hybrid"
+    },
+    "packet": {
+      "action_face": "-Z",
+      "action_index": 5,
+      "confidence": 0.2621408998966217,
+      "release": 0.6522781252861023,
+      "branch_access": 0.4805949926376343,
+      "energy": 0.5588533282279968,
+      "residual_cost": 0.021677495911717415,
+      "phi_pressure": 0.013747668825089931,
+      "prediction_face": "-Z",
+      "reconstruction_face": "+Y",
+      "stabilization_face": "-Z",
+      "cause_face": "-Z",
+      "consequence_face": "-Z",
+      "diagonal_face": "-Z",
+      "route_vector": [
+        0.17228947579860687,
+        0.13066744804382324,
+        0.10254483669996262,
+        0.23713190853595734,
+        0.0952254980802536,
+        0.2621408998966217
+      ],
+      "uncertainty": 0.3093136184848845,
+      "should_continue": false,
+      "should_release": true,
+      "memory_write_strength": 0.17295812466181815,
+      "control_mode": "release_packet",
+      "explanation": "RON selected port -Z with confidence 0.262; release=0.652, access=0.481, residual=0.022, dissonance=0.434. Mode: release_packet.",
+      "diagnostics": {
+        "residual_cost": 0.021677495911717415,
+        "phi_pressure": 0.013747668825089931,
+        "barrier": 0.013747668825089931,
+        "harmony": 0.7067969441413879,
+        "dissonance": 0.4342483580112457,
+        "branch_access": 0.4805949926376343,
+        "release": 0.6522781252861023,
+        "energy_mean": 0.5588533282279968,
+        "port_entropy": 0.5670856833457947,
+        "cycles_used": 1.0,
+        "consequence_pressure": 0.18689469993114471,
+        "plasticity_pressure": 0.5071549415588379,
+        "loop_energy_moved": 0.012413333170115948,
+        "loop_q_delta": 0.023252127692103386,
+        "loop_release": 0.5594576597213745,
+        "loop_continue": 0.5283424854278564,
+        "op_q": 0.3333333730697632,
+        "op_moment": 1.9138917195959948e-05,
+        "op_signature": 8.593089296482503e-05,
+        "op_harmonic": 0.01618880406022072,
+        "op_residual": 0.003494581440463662,
+        "op_phi": 0.0006228666170500219,
+        "operator_balance": 2.2822983264923096
+      }
+    },
+    "summary": {
+      "profile": "active_geodesic",
+      "mode": "ron_pure",
+      "active_pressure_strength": 0.5309638977050781,
+      "geodesic_cost": 0.4105055034160614,
+      "transport_cost": 0.022176304832100868,
+      "phi_flux": -0.37744641304016113,
+      "quaternion_order": 0.9734916687011719,
+      "triaxial_teacher_coherence_gap": 0.2676895558834076,
+      "triaxial_teacher_recommended_mode": "XZ_PRED_Y",
+      "triaxial_teacher_mode_count": 6,
+      "hybrid_accepted_count": 3,
+      "hybrid_rejected_count": 0,
+      "hybrid_policy_ok": true
+    },
+    "target_distribution": {
+      "0": 3,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 2,
+      "5": 1
+    },
+    "confusion_proxy": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "note": "This is packet-level aggregate analysis, not a full per-sample decoder."
+  },
+  "generated": [
+    "v20_3_action_accuracy_mean_by_step.png",
+    "v20_3_effects_vs_pure.png",
+    "v20_3_final_action_acc_ci.png",
+    "v20_3_final_loss_ci.png",
+    "v20_3_loss_mean_by_step.png",
+    "v20_3_packet_confusion_proxy.png",
+    "v20_3_release_mean_by_step.png",
+    "v20_3_residual_mean_by_step.png"
+  ]
+}

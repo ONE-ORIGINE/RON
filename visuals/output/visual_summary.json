@@ -1,0 +1,100 @@
+{
+  "packet": {
+    "action_face": "+X",
+    "action_index": 0,
+    "confidence": 0.2344517558813095,
+    "release": 0.5741121172904968,
+    "branch_access": 0.4781077206134796,
+    "energy": 0.5912079811096191,
+    "residual_cost": 0.016953982412815094,
+    "phi_pressure": 0.013751082122325897,
+    "prediction_face": "-Z",
+    "reconstruction_face": "+Z",
+    "stabilization_face": "+X",
+    "cause_face": "-Z",
+    "consequence_face": "+X",
+    "diagonal_face": "+X",
+    "route_vector": [
+      0.2344517558813095,
+      0.1047329306602478,
+      0.2173038274049759,
+      0.10610508918762207,
+      0.1039038598537445,
+      0.23350253701210022
+    ],
+    "uncertainty": 0.32876025773584844,
+    "should_continue": false,
+    "should_release": true,
+    "memory_write_strength": 0.17456631660461427,
+    "control_mode": "release_packet",
+    "explanation": "RON selected port +X with confidence 0.234; release=0.574, access=0.478, residual=0.017, dissonance=0.480. Mode: release_packet.",
+    "diagnostics": {
+      "residual_cost": 0.016953982412815094,
+      "phi_pressure": 0.013751082122325897,
+      "barrier": 0.013751082122325897,
+      "harmony": 0.6709232330322266,
+      "dissonance": 0.4800609052181244,
+      "branch_access": 0.4781077206134796,
+      "release": 0.5741121172904968,
+      "energy_mean": 0.5912079811096191,
+      "port_entropy": 0.6044694781303406,
+      "cycles_used": 1.0,
+      "consequence_pressure": 0.2066948562860489,
+      "plasticity_pressure": 0.510004460811615,
+      "loop_energy_moved": 0.013131999410688877,
+      "loop_q_delta": 0.024168649688363075,
+      "loop_release": 0.5262941122055054,
+      "loop_continue": 0.5333109498023987,
+      "op_q": 0.3333333432674408,
+      "op_moment": 1.9204855561838485e-05,
+      "op_signature": 9.158480679616332e-05,
+      "op_harmonic": 0.016838768497109413,
+      "op_residual": 0.002229409758001566,
+      "op_phi": 0.0006233695894479752,
+      "operator_balance": 2.2873194217681885
+    }
+  },
+  "summary": {
+    "profile": "active_geodesic",
+    "mode": "ron_pure",
+    "active_pressure_strength": 0.5199541449546814,
+    "geodesic_cost": 0.1755438596010208,
+    "transport_cost": 0.052410125732421875,
+    "phi_flux": -0.3782433867454529,
+    "quaternion_order": 0.9623954892158508,
+    "triaxial_teacher_coherence_gap": 0.10350698232650757,
+    "triaxial_teacher_recommended_mode": "XZ_PRED_Y",
+    "triaxial_teacher_mode_count": 6,
+    "hybrid_accepted_count": 3,
+    "hybrid_rejected_count": 0,
+    "hybrid_policy_ok": true
+  },
+  "hybrid_route": {
+    "accepted": [
+      [
+        "classical",
+        "state_codec"
+      ],
+      [
+        "triaxial_brute",
+        "xyz_teacher"
+      ],
+      [
+        "ron",
+        "active_geodesic_conductor"
+      ]
+    ],
+    "rejected": [],
+    "reason": {
+      "classical:state_codec": "accepted_as_boundary_codec",
+      "triaxial_brute:xyz_teacher": "accepted_as_teacher_or_diagnostic",
+      "ron:active_geodesic_conductor": "ron_core_signal"
+    }
+  },
+  "generated": [
+    "ron_axes_xyz.png",
+    "ron_packet_ports.png",
+    "ron_active_diagnostics.png",
+    "ron_hybrid_trifamily_flow.png"
+  ]
+}
